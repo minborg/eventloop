@@ -1,0 +1,4 @@
+--patch-module
+eventloop=_
+--add-reads
+eventloop=ALL-UNNAMED
