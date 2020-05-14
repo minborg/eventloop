@@ -27,3 +27,9 @@ hs_err_pid*
 *.iml
 
 .DS_Store
+
+demo/target/
+
+contract/target/
+
+provider/target/
