@@ -49,6 +49,7 @@
         <module>provider</module>
         <module>contract</module>
         <module>provider</module>
+        <module>demo</module>
     </modules>
     
     <!-- Properties -->
