@@ -8,7 +8,9 @@ public final class EnterpriseMain {
 
     public static void main(String[] args) {
 
-        // This assumes that there is an additional provider "provider.enterprise" on the module path.
+        // This assumes that there is an additional provider
+        // (e.g. via `requires eventloop.provider.enterprise;`) on the module path.
+
         // This is not done in this demo but could be easily done.
 
         final EventLoopComponent eventLoopComponent = ServiceLoaderUtil.getOrThrow(EventLoopComponent.class);

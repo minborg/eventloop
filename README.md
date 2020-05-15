@@ -1,6 +1,6 @@
 # EventLoop 
 
-This project demonstrates how an existing library can be re-structured and that:
+This project demonstrates how an existing library can be re-structured so that it:
 
 * Provides a minimum of API exposure
 * Adhered to the Java Platform Module System
@@ -10,7 +10,7 @@ This project demonstrates how an existing library can be re-structured and that:
 * Can optionally be used with Java's ServiceLoader
 * Retains full compatibility with old legacy code
 * Retains functionality in one place
-* Runs under Java 9 and upwards, but can be made to run under Java 8 too (requires changes)
+* Runs under Java 9 and upwards (but can be made to run under Java 8 too with changes)
 * Supports a business model where more sophisticated components may be offered at a premium price. 
 
 # Service Loader
@@ -100,7 +100,7 @@ eventLoop = minborg.eventloop.provider.standard.internal.eventloop.VanillaEventL
 ```
 
 # Legacy
-Old code that just instantiates an implementing class can co-exist and continue to work. The `VanillaEventLoop` shown hereunder is just a facade that delegates to an implementation obtained from a component. 
+Old code that just instantiates an implementing class can co-exist and continue to work. The (would be `@Depricated`) `VanillaEventLoop` shown hereunder is just a facade that delegates to an implementation obtained from a component. 
 
 ```java
 public final class LegacyMain {
@@ -128,7 +128,8 @@ public final class EnterpriseMain {
 
     public static void main(String[] args) {
 
-        // This assumes that there is an additional provider "provider.enterprise" on the module path.
+        // This assumes that there is an additional provider
+        // (e.g. via `requires eventloop.provider.enterprise;`) on the module path.
  
         final EventLoopComponent eventLoopComponent = ServiceLoaderUtil.getOrThrow(EventLoopComponent.class);
 
