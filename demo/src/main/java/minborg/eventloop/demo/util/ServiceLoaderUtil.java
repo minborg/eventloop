@@ -7,6 +7,8 @@ import java.util.ServiceLoader;
 public final class ServiceLoaderUtil {
     private ServiceLoaderUtil(){}
 
+    // Todo: internalise components
+
     public static <T> T getOrThrow(final Class<T> classToken) {
         return get(classToken)
                 .orElseThrow(NoSuchElementException::new);
