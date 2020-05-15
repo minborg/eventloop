@@ -11,7 +11,17 @@ This project demonstrates how an existing library can be re-structured so that i
 * Retains full compatibility with old legacy code
 * Retains functionality in one place
 * Runs under Java 9 and upwards (but can be made to run under Java 8 too with changes)
-* Supports a business model where more sophisticated components may be offered at a premium price. 
+* Supports a business model where more sophisticated components may be offered at a premium price.
+
+There are several modules in the project:
+
+* "contract" containing the contracts for the eventloop functionality (i.e. interfaces like `EventLoop`).
+* "provider' containing a standard internal set of implementations of the "contract" interfaces.
+* "legacy" containing wrapper classes that provides backward compatibility for old user-land implementations.
+* "demo" showing the usage of the above modules.
+* "enterprise" that is vapor ware in this version.
+ 
+Applications can often depend on the very slim "contract" module and remain unaware of any and all implementations. 
 
 # Service Loader
 Via a utility method, the desired component can be directly acquired and new instances can be created:
