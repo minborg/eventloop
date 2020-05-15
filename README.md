@@ -4,7 +4,7 @@
 This project demonstrates how an existing library can be re-structured so that it:
 
 * Provides a minimum of API exposure
-* Adhered to the Java Platform Module System
+* Adheres to the Java Platform Module System
 * Protects internal classes from deep reflection 
 * Supports a component based architecture
 * Can optionally be used under various dependency injection frameworks
@@ -50,7 +50,7 @@ public final class ServiceMain {
 This might produce:
 
 ```text
-eventLoop = minborg.eventloop.provider.standard.internal.eventloop.VanillaEventLoop@b97c004
+eventLoop = minborg.eventloop.provider.standard.internal.eventloop.StandardEventLoop@b97c004
 ```
 
 ### Direct Use
@@ -71,7 +71,7 @@ public final class DirectMain {
 This might produce:
 
 ```text
-eventLoop = minborg.eventloop.provider.standard.internal.eventloop.VanillaEventLoop@3dd3bcd
+eventLoop = minborg.eventloop.provider.standard.internal.eventloop.StandardEventLoop@3dd3bcd
 ```
 
 ### Dependency Injection
@@ -112,7 +112,7 @@ public class InjectorMain {
 This might produce:
 
 ```text
-eventLoop = minborg.eventloop.provider.standard.internal.eventloop.VanillaEventLoop@58c1670b
+eventLoop = minborg.eventloop.provider.standard.internal.eventloop.StandardEventLoop@58c1670b
 ```
 
 ### Legacy

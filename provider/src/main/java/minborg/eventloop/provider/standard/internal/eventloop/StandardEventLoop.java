@@ -5,7 +5,7 @@ import minborg.eventloop.EventLoop;
 
 import java.io.IOException;
 
-public final class VanillaEventLoop implements EventLoop {
+public final class StandardEventLoop implements EventLoop {
 
     @Override
     public String name() {
