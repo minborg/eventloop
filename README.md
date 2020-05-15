@@ -21,9 +21,11 @@ There are several modules in the project:
 * "provider' containing a standard internal set of implementations of the "contract" interfaces
 * "legacy" containing wrapper classes that provides backward compatibility for old user-land implementations
 * "demo" showing the usage of the above modules
-* "enterprise" that is vapor ware in this version
+* "enterprise" that is vaporware in this version
  
-Applications can often depend on the very slim "contract" module and remain unaware of any and all implementations. 
+## Application/test usage
+Applications only interact using the very slim "contract" module and remain unaware of any and all implementations.
+For testing, custom components that provide mockups can be used.  
 
 ## Examples
 
