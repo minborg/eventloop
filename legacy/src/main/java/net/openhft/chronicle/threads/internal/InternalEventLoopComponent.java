@@ -1,9 +1,28 @@
 package net.openhft.chronicle.threads.internal;
 
-public final class Components {
+import minborg.eventloop.EventLoop;
+import minborg.eventloop.component.EventLoopComponent;
+import minborg.eventloop.provider.standard.StandardEventLoopComponent;
 
-    private Components() { }
+public enum InternalEventLoopComponent implements EventLoopComponent {
+    INSTANCE;
 
-    public static create();
+    private final EventLoopComponent delegate = new StandardEventLoopComponent();
+
+    @Override
+    public EventLoop create() {
+        return delegate.create();
+    }
+
+    @Override
+    public EventLoop createBlocking() {
+        return delegate.createBlocking();
+    }
+
+    @Override
+    public EventLoop createGrouping() {
+        return delegate.createGrouping();
+    }
+
 
 }

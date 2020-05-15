@@ -1,4 +1,4 @@
-package minborg.eventloop.provider.vanilla.internal.pauser;
+package minborg.eventloop.provider.standard.internal.pauser;
 
 import minborg.eventloop.Pauser;
 

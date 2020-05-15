@@ -1,9 +1,9 @@
-package minborg.eventloop.provider.vanilla.internal.component;
+package minborg.eventloop.provider.standard.internal.component;
 
 import minborg.eventloop.EventLoop;
 import minborg.eventloop.component.EventLoopComponent;
-import minborg.eventloop.provider.vanilla.internal.eventloop.BlockingEventLoop;
-import minborg.eventloop.provider.vanilla.internal.eventloop.VanillaEventLoop;
+import minborg.eventloop.provider.standard.internal.eventloop.BlockingEventLoop;
+import minborg.eventloop.provider.standard.internal.eventloop.VanillaEventLoop;
 
 public final class InternalEventLoopComponent implements EventLoopComponent {
 

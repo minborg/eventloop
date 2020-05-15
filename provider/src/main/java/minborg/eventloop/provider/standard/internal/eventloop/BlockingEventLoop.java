@@ -1,4 +1,4 @@
-package minborg.eventloop.provider.vanilla.internal.eventloop;
+package minborg.eventloop.provider.standard.internal.eventloop;
 
 import minborg.eventloop.EventHandler;
 import minborg.eventloop.EventLoop;
