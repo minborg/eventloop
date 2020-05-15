@@ -1,10 +1,10 @@
-package minborg.eventloop.provider.vanilla;
+package minborg.eventloop.provider.standard;
 
 import minborg.eventloop.EventLoop;
 import minborg.eventloop.component.EventLoopComponent;
-import minborg.eventloop.provider.vanilla.internal.component.InternalEventLoopComponent;
+import minborg.eventloop.provider.standard.internal.component.InternalEventLoopComponent;
 
-public final class VanillaEventLoopComponent implements EventLoopComponent {
+public final class StandardEventLoopComponent implements EventLoopComponent {
 
     private final EventLoopComponent delegate = new InternalEventLoopComponent();
 

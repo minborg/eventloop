@@ -1,7 +1,8 @@
 module eventloop.demo {
 
     requires eventloop;
-    requires eventloop.provider.vanilla;
+    requires eventloop.provider.standard;
+    requires chronicle.threads;
 
     // Enable service discovery
     uses minborg.eventloop.component.EventLoopComponent;

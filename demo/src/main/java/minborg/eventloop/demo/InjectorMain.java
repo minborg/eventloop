@@ -3,14 +3,14 @@ package minborg.eventloop.demo;
 import com.speedment.common.injector.Injector;
 import minborg.eventloop.EventLoop;
 import minborg.eventloop.component.EventLoopComponent;
-import minborg.eventloop.provider.vanilla.VanillaEventLoopComponent;
+import minborg.eventloop.provider.standard.StandardEventLoopComponent;
 
 public class InjectorMain {
 
     public static void main(String[] args) throws InstantiationException {
 
         final Injector injector = Injector.builder()
-                .withComponent(VanillaEventLoopComponent.class)
+                .withComponent(StandardEventLoopComponent.class)
                 .withComponent(MyRunnable.class)
                 .build();
 

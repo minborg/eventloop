@@ -48,6 +48,7 @@
         <module>contract</module>
         <module>provider</module>
         <module>demo</module>
+        <module>legacy</module>
     </modules>
     
     <!-- Properties -->

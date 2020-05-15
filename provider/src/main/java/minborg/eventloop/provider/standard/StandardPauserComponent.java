@@ -1,10 +1,10 @@
-package minborg.eventloop.provider.vanilla;
+package minborg.eventloop.provider.standard;
 
 import minborg.eventloop.Pauser;
 import minborg.eventloop.component.PauserComponent;
-import minborg.eventloop.provider.vanilla.internal.component.InternalPauserComponent;
+import minborg.eventloop.provider.standard.internal.component.InternalPauserComponent;
 
-public final class VanillaPauserComponent implements PauserComponent {
+public final class StandardPauserComponent implements PauserComponent {
 
     private final PauserComponent delegate = new InternalPauserComponent();
 

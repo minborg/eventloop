@@ -12,14 +12,22 @@
     <artifactId>demo</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>minborg</groupId>
-            <artifactId>eventloop-provider-vanilla</artifactId>
-            <version>0.0.1</version>
-        </dependency>
+
         <dependency>
             <groupId>minborg</groupId>
             <artifactId>eventloop-contract</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>minborg</groupId>
+            <artifactId>eventloop-provider-standard</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>minborg</groupId>
+            <artifactId>eventloop-legacy</artifactId>
             <version>0.0.1</version>
         </dependency>
 
