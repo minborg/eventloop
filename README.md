@@ -4,14 +4,14 @@
 This project demonstrates how an existing library can be re-structured so that it:
 
 * Provides a minimum of API exposure
-* Adheres to the Java Platform Module System
-* Protects internal classes from deep reflection 
 * Supports a component based architecture
 * Can optionally be used under various dependency injection frameworks
 * Can optionally be used with Java's ServiceLoader
 * Retains full compatibility with old legacy code
+* Adheres to the Java Platform Module System (JPMS) (optional to use)
+* Protects internal classes from deep reflection under JPMS 
 * Retains functionality in one place
-* Runs under Java 9 and upwards (but can be made to run under Java 8 too with changes)
+* Runs under Java 9 and upwards (but can be made to run under Java 8 too with minor changes)
 * Supports a business model where more sophisticated components may be offered at a premium price
 
 ## Modules
